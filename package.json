@@ -1,0 +1,16 @@
+{
+  "name": "vuepressBlog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:isjyi/vuepressBlog.git",
+  "author": "jerry <zhangbiao19931203@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.44"
+  }
+}
