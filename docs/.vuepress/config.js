@@ -10,16 +10,33 @@ module.exports = {
         //导航栏配置
         nav: require('./nav/zh'),
         sidebar: {
-            '/Linux/': getUbuntuSidebar(),
+            '/Network/': getUbuntuSidebar(),
+            '/Me/':getMeSidebar(),
         },
         search: true,
         searchMaxSuggestions: 10
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@image': '../.vuepress/public/img'
+            }
+        }
     }
 };
 
 function getUbuntuSidebar() {
     return [
-        '/Linux/',
-        'php72'
+        ['/Network/','HTTP 协议'],
+        ['/Network/Https.md','HTTP over SSL/TLS'],
+        ['/Network/Tcp.md','TCP 协议'],
+        ['/Network/Udp.md','UDP 协议'],
+        ['/Network/Ip.md','IP 协议'],
+    ]
+}
+
+function getMeSidebar() {
+    return [
+        '/Me/'
     ]
 }

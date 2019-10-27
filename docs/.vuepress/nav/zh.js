@@ -1,23 +1,27 @@
 module.exports = [
     {
-        text: 'Blog',
+        text: '基础知识',
         items: [
+            // {
+            //     text: 'PHP',
+            //     link: '/Service/php/'
+            // },
             {
-                text: 'PHP',
-                link: '/Service/php/'
-            },
-            {
-                text: 'Linux',
-                link: '/Linux/'
+                text: '计算机网络',
+                link: '/Network/'
             }
         ]
     },
+    // {
+    //     text: 'Project',
+    //     link: '/Project'
+    // },
     {
-        text: 'Project',
-        link: '/Project'
+        text: '关于我',
+        link: '/Me/'
     },
     {
-        text: 'Resume',
-        link: '/Resume'
+        text:'GitHub',
+        link:'https://github.com/isjyi'
     }
 ];
