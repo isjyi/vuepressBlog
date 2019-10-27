@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', {rel: 'icon', href: '/img/favicon.ico'}],
     ],
-    host: '127.0.0.1',
+    host: '192.168.10.10',
     //主题配置
     themeConfig: {
         //导航栏配置
@@ -37,6 +37,6 @@ function getUbuntuSidebar() {
 
 function getMeSidebar() {
     return [
-        '/Me/'
+        ['/Me/','关于我']
     ]
 }
